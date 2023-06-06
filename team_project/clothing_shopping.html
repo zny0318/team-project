@@ -35,6 +35,7 @@
         #six:hover .six2{
             display:inline-block;
         }
+        
         #name{
             font-size: 200%;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -54,8 +55,16 @@
             display: flex;
             align-items: center;
             
-            float: right;
+            /* float: right; */
             background-color: black;
+        }
+        #menu{
+            float:right;
+            margin: 0 auto;
+            width: 30%;
+            height: 30px;
+            line-height: 50%;
+            /* background-color:blue; */
         }
         
         #type{
@@ -101,17 +110,33 @@
         <p style="color: white;"> search:
         <textarea name="" id="" cols="50%" rows="2px"></textarea></p>
         <!-- <button><img src="wenhao.jfif" alt=""></button> -->
-        
+        <!-- menu -->
+        <div id="menu">
+            <ul>
+                <li>
+                    <!-- shopping cart -->
+                    <a style="color: white; text-decoration: none;" href="#">장바구니</a>
+                </li>
+                <li>
+                    <a style="color: white; text-decoration: none;" href="login.html">로그인</a>
+                </li>
+                <li>
+                    <a style="color: white; text-decoration: none;" href="member.html">회원가입</a>
+                </li>
+            </ul>
+        </div>
     </div>
     
+    
+
     <!-- 의료 타입 -->
     <div id="type">
         <h1>타입 선택</h1>
         <br>
         <ul class="a"`>
-            <li><a href="#"><img src="女jpg.png" alt="" width="40%"></a></li>
-            <li><a href="#"><img src="男.png" alt="" width="40%"></a></li>
-            <li><a href="#"><img src="男女共用.png" alt="" width="40%"></a></li>
+            <li><a href="#" id="girl"><img src="女jpg.png" alt="" width="40%"></a></li>
+            <li><a href="#" id="boy"><img src="男.png" alt="" width="40%"></a></li>
+            <li><a href="#" ><img src="男女共用.png" alt="" width="40%"></a></li>
             <li><a href="#"><img src="运动.png" alt="" width="40%"></a></li>
             <li><a href="#"><img src="鞋.png" alt="" width="40%"></a></li>
             <li><a href="#"><img src="包.png" alt="" width="40%"></a></li>
@@ -161,5 +186,8 @@
             </a></li>
         </ul>
     </div>
+    <script>
+        
+    </script>
 </body>
 </html>

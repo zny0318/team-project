@@ -1,0 +1,23 @@
+<style>
+    div{
+        width: 300px;
+        height: 300px;
+        margin:100px auto;
+        border: 1px solid #000;
+        text-align: center;
+        line-height: 100px;
+    }
+</style>
+<div>
+    ID: <input type="text" id="id">
+    <br>
+    password: <input type="text" id="password">
+    <br>
+    <input type="button" value="확인">
+</div>
+<script>
+    const uname = prompt('please enter your ID:')
+    const password = prompt('please enter your password')
+    document.getElementById("id").value = uname
+    document.getElementById("password").value = password
+</script>

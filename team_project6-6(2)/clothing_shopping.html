@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .one2,
+        .two2,
+        .three2,
+        .four2,
+        .five2,
+        .six2{
+            
+            display:none;
+        }
+        #one:hover .one1,
+        #two:hover .two1,
+        #three:hover .three1,
+        #four:hover .four1,
+        #five:hover .five1,
+        #six:hover .six1{
+            display: none;
+        }
+        #one:hover .one2,
+        #two:hover .two2,
+        #three:hover .three2,
+        #four:hover .four2,
+        #five:hover .five2,
+        #six:hover .six2{
+            display:inline-block;
+        }
+        
+        #name{
+            font-size: 200%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            width: 30%;
+            height: 120px;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            float: left;
+            background-color: black; 
+        }
+        #search{
+            font-size: 150%;
+            width: 70%;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            
+            /* float: right; */
+            background-color: black;
+        }
+        #menu{
+            float:right;
+            margin: 0 auto;
+            width: 30%;
+            height: 30px;
+            line-height: 50%;
+            /* background-color:blue; */
+        }
+        
+        #type{
+            width: 20%;
+            height: 500px;
+            margin:2%;
+
+            float: left;
+            /* background-color:blue; */
+        }
+        #brand{
+            width: 48%;
+            height: 500px;
+            margin: 2%;
+
+            float: right;
+            /* background-color:coral; */
+        }
+        #discount{
+            width: 20%;
+            height: 500px;
+            margin:2%;
+
+            float: right;
+            /* background-color: brown;  */
+        }
+        ul li{
+            display:inline;
+            margin: 2%;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- 웹페이지 이름 -->
+    <div id="name">
+        <h1 style="color: white;">ZZX</h1>
+    </div>
+    
+    <!-- 검색 -->
+    <div id="search">
+        <!-- search:<input type="text" cols="50%" row="2px"> -->
+        <p style="color: white;"> search:
+        <textarea name="" id="" cols="50%" rows="2px"></textarea></p>
+        <!-- <button><img src="wenhao.jfif" alt=""></button> -->
+        <!-- menu -->
+        <div id="menu">
+            <ul>
+                <li>
+                    <!-- shopping cart -->
+                    <a style="color: white; text-decoration: none;" href="장바구니.html">장바구니</a>
+                </li>
+                <li>
+                    <a style="color: white; text-decoration: none;" href="login.html">로그인</a>
+                </li>
+                <li>
+                    <a style="color: white; text-decoration: none;" href="member.html">회원가입</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    
+
+    <!-- 의료 타입 -->
+    <div id="type">
+        <h1>타입 선택</h1>
+        <br>
+        <ul class="a"`>
+            <li><a href="여성.html" id="girl"><img src="女jpg.png" alt="" width="40%"></a></li>
+            <li><a href="남성.html" id="boy"><img src="男.png" alt="" width="40%"></a></li>
+            <li><a href="공용.html" ><img src="男女共用.png" alt="" width="40%"></a></li>
+            <li><a href="스포츠.html"><img src="运动.png" alt="" width="40%"></a></li>
+            <li><a href="신발.html"><img src="鞋.png" alt="" width="40%"></a></li>
+            <li><a href="가방.html"><img src="包.png" alt="" width="40%"></a></li>
+        </ul>
+    </div>
+    
+    <!-- 할인 구역 -->
+    <div id="discount">
+        <h1>할인 구역</h1>
+        <br>
+        <ul class="b">
+            <li><a href="#" ><img src="nike.png" alt="" style="width: 96%;height: 30%;"></a></li>
+            <li><a href="#" ><img src="blsj.png" alt="" style="width: 96%;height: 30%;"></a></li>
+        </ul>
+    </div>
+    
+    <!-- 브랜드 분류 -->
+    <div id="brand">
+        <h1>브랜드 구역</h1>
+        <br>
+        <ul class="c">
+            <li id="one">
+                <a href="#">
+                    <img class='one1' src="dg2.jpg" alt="" width="40%">
+                    <h6 class="one2" style="width:40%; line-height:50px;">Dolce & Gabbana는 도메니코 돌체, 스테파노 가바나가 1985년 설립한 브랜드로 이탈리아 밀라노에 본사를 두고 있으며, 럭셔리 분야에서 가장 주요한 글로벌 그룹 중 하나가 되었다.</h6>
+                </a>
+            </li>
+            <li id="two"><a href="#">
+                <img class='two1' src="dior2.jpg" alt="" width="40%">
+                <h6 class="two2" style="width:40%; line-height:50px;">크리스찬 디올(Christian Dior)은 프랑스의 패션 소비 브랜드로, 모리에 헤네시 루이뷔통 그룹에 소속되어 있습니다.디올은 남녀 핸드백, 여성복, 남성복, 남녀 신발, 액세서리, 향수, 화장품, 아동복 등 고급 소비재를 주로 취급한다.</h6>
+            </a></li>
+            <li id="three"><a href="#">
+                <img class="three1" src="chanel.png" alt="" width="40%">
+                <h6 class="three2" style="width:40%; line-height:50px;">샤넬(Chanel)은 1910년 프랑스에서 설립된 프랑스의 명품 브랜드로, 코코 샤넬이 패션 부티크 및 액세서리, 향수 메이크업 및 스킨케어, 손목시계/고급 주얼리의 세 가지 카테고리를 가지고 있습니다.</h6>
+            </a></li>
+            <li id="four"><a href="#">
+                <img class="four1" src="ck.png" alt="" width="40%">
+                <h6 class="four2" style="width:40%; line-height:50px;">캘빈클라인(CK)은 1968년 캘빈클라인이 설립한 글로벌 패션 라이프스타일 브랜드로, CK는 섹시하고 미니멀한 스타일로 글로벌 문화 융합의 촉매제가 되기 위해 노력하고 있다.</h6>
+            </a></li>
+            <li id="five"><a href="#">
+                <img class="five1" src="boss.png" alt="" width="40%">
+                <h6 class="five2" style="width:40%; line-height:50px;">휴고보스（HUGO BOSS）는 세계적으로 유명한 럭셔리 브랜드로 독일에서 유래되었으며 남녀 의류, 향수, 시계, 기타 액세서리를 주로 취급하고 있습니다.</h6>
+            </a></li>
+            <li id="six"><a href="#">
+                <img class="six1" src="valen.png" alt="" width="40%">
+                <h6 class="six2" style="width:40%; line-height:50px;">발렌티노(Valentino)는 세계적인 고급 맞춤복 및 고급 의류 명품 브랜드로, 제품에는 고급 맞춤복, 의류 및 핸드백, 구두, 소형 가죽, 벨트, 안경, 손목시계 및 향수를 포함한 일련의 액세서리가 포함된다.</h6>
+            </a></li>
+        </ul>
+    </div>
+    <script>
+        
+    </script>
+</body>
+</html>
